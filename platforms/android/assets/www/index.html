@@ -31,20 +31,22 @@
       <h1>PhoneGapPlugins</h1>
       <div id="deviceready" class="blink">
         <p class="event listening">Connecting to Device</p>
-        <p class="event received" onclick="connectionCustom.checkConnection()">Device is Ready</p>
+        <p class="event received">Device is Ready</p>
       </div>
       <div>
-       <div>
-        <p>Network:</p><p id="network"></p>
-        <p onclick="notificationCustom.showAlert()">alert</p>
-        <p onclick="notificationCustom.showConfirm()">confirm</p>
-        <p onclick="notificationCustom.showPrompt()">prompt</p>
-        <p onclick="notificationCustom.playBeep()">playBeep</p>
-        <p onclick="notificationCustom.vibrate()">vibrate</p>
-       </div>
+        <div>
+          <p id="deviceProperties">Loading device properties...</p>
+          <p onclick="connectionCustom.checkConnection()">network</p>
+          <p onclick="notificationCustom.showAlert()">alert</p>
+          <p onclick="notificationCustom.showConfirm()">confirm</p>
+          <p onclick="notificationCustom.showPrompt()">prompt</p>
+          <p onclick="notificationCustom.playBeep()">playBeep</p>
+          <p onclick="notificationCustom.vibrate()">vibrate</p>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="phonegap.js"></script>
+    <script type="text/javascript" src="js/device.js"></script>
     <script type="text/javascript" src="js/connection.js"></script>
     <script type="text/javascript" src="js/notification.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

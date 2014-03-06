@@ -35,6 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
+        deviceCustom.drawDevice();
 //        connectionCustom.checkConnection();
     },
     

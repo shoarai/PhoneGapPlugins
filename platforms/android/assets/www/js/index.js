@@ -35,7 +35,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        connectionCustom.checkConnection();
+        deviceCustom.drawDevice();
+//        connectionCustom.checkConnection();
     },
     
     // Update DOM on a Received Event
