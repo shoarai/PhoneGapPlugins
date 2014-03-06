@@ -4,6 +4,12 @@
 
 
 var notificationCustom = {
+    initialize: function() {
+      
+      
+      
+    },
+    
     // alert dialog dismissed
     alertDismissed: function() {
         // do something
@@ -14,7 +20,7 @@ var notificationCustom = {
     showAlert: function() {
         navigator.notification.alert(
             'You are the winner!',  // message
-            app.alertDismissed,         // callback
+            notificationCustom.alertDismissed,         // callback
             'Game Over',            // title
             'Done'                  // buttonName
         );
@@ -30,7 +36,7 @@ var notificationCustom = {
     showConfirm: function() {
         navigator.notification.confirm(
             'You are the winner!', // message
-             app.onConfirm,            // callback to invoke with index of button pressed
+             notificationCustom.onConfirm,            // callback to invoke with index of button pressed
             'Game Over',           // title
             ['Restart','Exit']         // buttonLabels
         );
@@ -46,42 +52,10 @@ var notificationCustom = {
     showPrompt: function() {
         navigator.notification.prompt(
             'Please enter your name',  // message
-            app.onPrompt,                  // callback to invoke
+            notificationCustom.onPrompt,                  // callback to invoke
             'Registration',            // title
             ['Ok','Exit'],             // buttonLabels
             'Jane Doe'                 // defaultText
-        );
-    },
-
-    // Show a custom alert
-    //
-    showAlert: function() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-    },
-
-    // Beep three times
-    //
-    playBeep: function() {
-        navigator.notification.beep(3);
-    },
-
-    // Vibrate for 2 seconds
-    //
-    vibrate: function() {
-        navigator.notification.vibrate(2000);
-    },
-
-    // Show a custom alert
-    //
-    showAlert: function() {
-        navigator.notification.alert(
-            'You are the winner!',  // message
-            'Game Over',            // title
-            'Done'                  // buttonName
         );
     },
 

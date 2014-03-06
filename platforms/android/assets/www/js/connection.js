@@ -18,5 +18,10 @@ var connectionCustom = {
         states[Connection.NONE]     = 'No network connection';
 
         alert('Connection type: ' + states[networkState]);
-    },
+        
+        
+/*        var newElem = document.createElement("br");
+        var tnode = document.createTextNode("<Any-Text>");
+        newElem.appendChild(tnode);
+*/    },
 };
