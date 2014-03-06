@@ -32,6 +32,7 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\in
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\notification.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \
@@ -39,6 +40,8 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugi
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\Connection.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\network.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\res\icon \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\res\screen \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\res\icon\android \

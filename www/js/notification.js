@@ -1,6 +1,6 @@
-
-
-
+/**
+ * © 2014 shoarai
+ */
 
 
 var notificationCustom = {
