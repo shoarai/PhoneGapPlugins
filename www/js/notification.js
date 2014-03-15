@@ -4,12 +4,6 @@
 
 
 var notificationCustom = {
-  initialize: function() {
-   
-   
-   
-  },
-  
   // alert dialog dismissed
   alertDismissed: function() {
     // do something
@@ -18,41 +12,45 @@ var notificationCustom = {
   // Show a custom alertDismissed
   //
   showAlert: function() {
+    var self = this;
     navigator.notification.alert(
       'You are the winner!', // message
-      notificationCustom.alertDismissed,     // callback
+      self.alertDismissed,     // callback
       'Game Over',      // title
       'Done'         // buttonName
     );
   },
   
   // process the confirmation dialog result
-  onConfirm: function(buttonIndex) {
+  _onConfirm: function(buttonIndex) {
    alert('You selected button ' + buttonIndex);
   },
   
   // Show a custom confirmation dialog
   //
   showConfirm: function() {
+    var self = this;
     navigator.notification.confirm(
       'You are the winner!', // message
-       notificationCustom.onConfirm,      // callback to invoke with index of button pressed
+       self._onConfirm,      // callback to invoke with index of button pressed
       'Game Over',      // title
       ['Restart','Exit']     // buttonLabels
     );
   },
 
   // process the promptation dialog result
-  onPrompt: function(results) {
+  //
+  _onPrompt: function(results) {
     alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
   },
 
   // Show a custom prompt dialog
   //
   showPrompt: function() {
+    var self = this;
     navigator.notification.prompt(
       'Please enter your name', // message
-      notificationCustom.onPrompt,         // callback to invoke
+      self._onPrompt,         // callback to invoke
       'Registration',      // title
       ['Ok','Exit'],       // buttonLabels
       'Jane Doe'         // defaultText
@@ -62,12 +60,12 @@ var notificationCustom = {
   // Beep three times
   //
   playBeep: function() {
-    navigator.notification.beep(3);
+    navigator.notification.beep(config.BEEP_TIME);
   },
 
   // Vibrate for 2 seconds
   //
   vibrate: function() {
-    navigator.notification.vibrate(2000);
+    navigator.notification.vibrate(config.VIBRATE_TIME);
   }
 };

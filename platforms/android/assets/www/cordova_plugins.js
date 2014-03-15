@@ -49,6 +49,20 @@ module.exports = [
         "clobbers": [
             "navigator.splashscreen"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
+        "id": "org.apache.cordova.device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
+        "id": "org.apache.cordova.device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -58,7 +72,8 @@ module.exports.metadata =
     "org.apache.cordova.dialogs": "0.2.6",
     "org.apache.cordova.vibration": "0.3.7",
     "org.apache.cordova.device": "0.2.8",
-    "org.apache.cordova.splashscreen": "0.2.7"
+    "org.apache.cordova.splashscreen": "0.2.7",
+    "org.apache.cordova.device-motion": "0.2.6"
 }
 // BOTTOM OF METADATA
 });

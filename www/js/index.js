@@ -38,7 +38,14 @@ var app = {
         // デバイス情報を表示する
         deviceCustom.showProperties();
         
+        // スプラッシュスクリーンを表示する
         splashscreenCustom.showScreen();
+        
+        // 加速度を取得する
+        accelerometerCustom.getAcceleration();
+        
+        // 加速度を監視し表示する
+        accelerometerCustom.startWatch();
 //        connectionCustom.checkConnection();
     },
     

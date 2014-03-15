@@ -6,6 +6,7 @@
 
 var connectionCustom = {
   
+  
   checkConnection: function() {
     var networkState = navigator.connection.type;
     
@@ -21,11 +22,5 @@ var connectionCustom = {
 
     alert('Connection type: ' + states[networkState]);
     
-    
-/*
-    var newElem = document.createElement("network");
-    var tnode = document.createTextNode("<Any-Text>");
-    newElem.appendChild(tnode);
-*/
   },
 };
