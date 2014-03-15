@@ -26,8 +26,7 @@ var app = {
   // Bind any events that are required on startup. Common events are:
   // 'load', 'deviceready', 'offline', and 'online'.
   bindEvents: function() {
-    var self = this;
-    document.addEventListener('deviceready', self.onDeviceReady, false);
+    document.addEventListener('deviceready', this.onDeviceReady, false);
     
     // ネットワークの状態が変化したとき、ネットワークの状態を確認する
     document.addEventListener("online", connectionCustom.checkConnection, false);

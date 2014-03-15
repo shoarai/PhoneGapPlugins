@@ -8,10 +8,9 @@ var notificationCustom = {
   // Show a custom _alertDismissed
   //
   showAlert: function() {
-    var self = this;
     navigator.notification.alert(
       'You are the winner!', // message
-      self._alertDismissed,     // callback
+      this._alertDismissed,     // callback
       'Game Over',      // title
       'Done'         // buttonName
     );
@@ -25,10 +24,9 @@ var notificationCustom = {
   // Show a custom confirmation dialog
   //
   showConfirm: function() {
-    var self = this;
     navigator.notification.confirm(
       'You are the winner!', // message
-       self._onConfirm,      // callback to invoke with index of button pressed
+       this._onConfirm,      // callback to invoke with index of button pressed
       'Game Over',      // title
       ['Restart','Exit']     // buttonLabels
     );
@@ -44,15 +42,12 @@ var notificationCustom = {
   // Show a custom prompt dialog
   //
   showPrompt: function() {
-    var text = document.getElementById('prompt-text').innerText;
-    
-    var self = this;
     navigator.notification.prompt(
       'Please enter your name', // message
-      self._onPrompt,         // callback to invoke
+      this._onPrompt,         // callback to invoke
       'Registration',      // title
-      ['Ok','Exit'],       // buttonLabels
-      self.promptText         // defaultText
+      ['OK','Exit'],       // buttonLabels
+      this.promptText         // defaultText
     );
   },
   
@@ -61,7 +56,7 @@ var notificationCustom = {
   _onPrompt: function(results) {
     alert("You selected button number " + results.buttonIndex + " and entered " + results.input1);
     
-    this.promptText = results.input1;
+    notificationCustom.promptText = results.input1;
   },
 
   // Beep three times
