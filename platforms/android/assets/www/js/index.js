@@ -17,47 +17,68 @@
  * under the License.
  */
 var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-        
-        // デバイス情報を表示する
-        deviceCustom.showProperties();
-        
-        // スプラッシュスクリーンを表示する
-        splashscreenCustom.showScreen();
-        
-        // 加速度を取得する
-        accelerometerCustom.getAcceleration();
-        
-        // 加速度を監視し表示する
-        accelerometerCustom.startWatch();
-//        connectionCustom.checkConnection();
-    },
+  // Application Constructor
+  initialize: function() {
+      this.bindEvents();
+  },
+  // Bind Event Listeners
+  //
+  // Bind any events that are required on startup. Common events are:
+  // 'load', 'deviceready', 'offline', and 'online'.
+  bindEvents: function() {
+    var self = this;
+    document.addEventListener('deviceready', self.onDeviceReady, false);
     
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+    // ネットワークの状態が変化したとき、ネットワークの状態を確認する
+    document.addEventListener("online", connectionCustom.checkConnection, false);
+    document.addEventListener("offline", connectionCustom.checkConnection, false);
+  },
+  // deviceready Event Handler
+  //
+  // The scope of 'this' is the event. In order to call the 'receivedEvent'
+  // function, we must explicity call 'app.receivedEvent(...);'
+  onDeviceReady: function() {
+    app.receivedEvent('deviceready');
+    
+    // デバイス情報を表示する
+    deviceCustom.showProperties();
+    
+    // ネットワーク状況を確認する
+    connectionCustom.checkConnection();
+    
+    // スプラッシュスクリーンを表示する
+    splashscreenCustom.showScreen();
+    
+    // 加速度を取得する
+//    accelerometerCustom.getAcceleration();
+    
+    // 加速度を監視する
+    accelerometerCustom.startWatch();
+    
+    // ボタンを押下可能にする
+    app.activeButton();
+  },
+  
+  /**
+   * ボタンを押下可能にする
+   */
+  activeButton: function() {
+    var buttonElements = document.getElementsByTagName("button");
+    
+    for(i=0;i<buttonElements.length;i++){
+      buttonElements[i].disabled = false;
     }
+  },
+  
+  // Update DOM on a Received Event
+  receivedEvent: function(id) {
+    var parentElement = document.getElementById(id);
+    var listeningElement = parentElement.querySelector('.listening');
+    var receivedElement = parentElement.querySelector('.received');
+
+    listeningElement.setAttribute('style', 'display:none;');
+    receivedElement.setAttribute('style', 'display:block;');
+
+    console.log('Received Event: ' + id);
+  }
 };

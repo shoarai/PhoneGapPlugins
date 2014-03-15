@@ -31,24 +31,13 @@ var accelerometerCustom = {
     }
   },
   
+  // onSuccess: Get a snapshot of the current acceleration
+  //
   _onSuccess: function(acceleration) {
-    document.getElementById('ax').innerHTML = acceleration.x;
-    document.getElementById('ay').innerHTML = acceleration.y;
-    document.getElementById('az').innerHTML = acceleration.z;
-    
-/*
-    alert('Acceleration X: ' + acceleration.x + '\n' +
-          'Acceleration Y: ' + acceleration.y + '\n' +
-          'Acceleration Z: ' + acceleration.z + '\n' +
-          'Timestamp: '      + acceleration.timestamp + '\n');
-*/          
-/*    
-    var element = document.getElementById('accelerometer');
-    element.innerHTML = 'Acceleration X: ' + acceleration.x         + '<br />' +
-                        'Acceleration Y: ' + acceleration.y         + '<br />' +
-                        'Acceleration Z: ' + acceleration.z         + '<br />' +
-                        'Timestamp: '      + acceleration.timestamp + '<br />';
-*/
+    document.getElementById('acceleration-x').innerHTML = acceleration.x;
+    document.getElementById('acceleration-y').innerHTML = acceleration.y;
+    document.getElementById('acceleration-z').innerHTML = acceleration.z;
+    document.getElementById('acceleration-timestamp').innerHTML = acceleration.timestamp;
   },
   
   // onError: Failed to get the acceleration
