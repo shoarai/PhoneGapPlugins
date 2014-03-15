@@ -35,7 +35,10 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        deviceCustom.drawDevice();
+        // デバイス情報を表示する
+        deviceCustom.showProperties();
+        
+        splashscreenCustom.showScreen();
 //        connectionCustom.checkConnection();
     },
     

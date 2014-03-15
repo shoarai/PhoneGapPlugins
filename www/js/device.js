@@ -6,7 +6,7 @@
 
 var deviceCustom = {
   
-  drawDevice: function() {
+  showProperties: function() {
     var element = document.getElementById('deviceProperties');
     element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
                         'Device Model: '    + device.model    + '<br />' +

@@ -35,7 +35,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        deviceCustom.drawDevice();
+        deviceCustom.showProperties();
+        splashscreenCustom.showScreen();
 //        connectionCustom.checkConnection();
     },
     

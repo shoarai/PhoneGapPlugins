@@ -22,7 +22,8 @@ var connectionCustom = {
     alert('Connection type: ' + states[networkState]);
     
     
-/*    var newElem = document.createElement("network");
+/*
+    var newElem = document.createElement("network");
     var tnode = document.createTextNode("<Any-Text>");
     newElem.appendChild(tnode);
 */

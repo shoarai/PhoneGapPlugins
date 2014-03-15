@@ -27,5 +27,6 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\dialogs\Notification.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\networkinformation\NetworkManager$1.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\networkinformation\NetworkManager.class \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\splashscreen\SplashScreen.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\vibration\Vibration.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\dexedLibs\classes-d540785ea11dfc6e95146e4be98e7ae0.jar \

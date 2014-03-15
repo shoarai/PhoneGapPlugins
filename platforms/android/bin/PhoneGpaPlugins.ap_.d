@@ -31,9 +31,11 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\co
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\device.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\index.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\notification.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\splashscreen.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
@@ -44,6 +46,8 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugi
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\Connection.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information\www\network.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen\www\splashscreen.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\res\icon \
