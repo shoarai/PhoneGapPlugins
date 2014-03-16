@@ -51,6 +51,18 @@ header {
   color: #FFFFFF;
 }
 
+header button {
+  margin: 0px;
+  height: 44px;
+  border-radius: 0px;
+  position: absolute;
+  top: 0%;
+}
+
+button.right {
+  right: 0%;
+}
+
 header h1 {
   font-size: 23px;
   padding: 10px 0px 0px 0px;
@@ -58,6 +70,7 @@ header h1 {
   text-align: center;
   font-weight: normal;
 }
+
 
 /* Portrait layout (default) */
 article {
@@ -80,6 +93,12 @@ button {
   font-size: 18px;
   padding: 8px 0px;
   margin: 10px 5px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);   /*Androidでタップ時にオレンジの枠表示を解除*/
+}
+
+button:hover {
+  background: #4B946A;
+  /*background: -webkit-gradient(linear, left top, left bottom, from(#489900), to(#63d000));*/
 }
 
 button[type="button"]:disabled {

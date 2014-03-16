@@ -8,10 +8,9 @@ var notificationCustom = {
   // Show a custom _alertDismissed
   //
   showAlert: function() {
-    var self = this;
     navigator.notification.alert(
       'You are the winner!', // message
-      self._alertDismissed,     // callback
+      this._alertDismissed,     // callback
       'Game Over',      // title
       'Done'         // buttonName
     );
@@ -35,7 +34,7 @@ var notificationCustom = {
   
   // process the confirmation dialog result
   _onConfirm: function(buttonIndex) {
-   alert('You selected button ' + buttonIndex);
+    alert('You selected button ' + buttonIndex);
   },
   
   promptText: 'Jane Doe',
@@ -47,7 +46,7 @@ var notificationCustom = {
       'Please enter your name', // message
       this._onPrompt,         // callback to invoke
       'Registration',      // title
-      ['Ok','Exit'],       // buttonLabels
+      ['OK','Exit'],       // buttonLabels
       this.promptText         // defaultText
     );
   },

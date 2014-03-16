@@ -34,7 +34,7 @@ var notificationCustom = {
   
   // process the confirmation dialog result
   _onConfirm: function(buttonIndex) {
-   alert('You selected button ' + buttonIndex);
+    alert('You selected button ' + buttonIndex);
   },
   
   promptText: 'Jane Doe',
