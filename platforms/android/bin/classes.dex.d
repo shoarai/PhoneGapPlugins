@@ -9,6 +9,8 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\com\
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\device\Device.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\devicemotion\AccelListener$1.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\devicemotion\AccelListener.class \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\deviceorientation\CompassListener$1.class \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\deviceorientation\CompassListener.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\dialogs\Notification$1$1.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\dialogs\Notification$1$2.class \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\bin\classes\org\apache\cordova\dialogs\Notification$1.class \

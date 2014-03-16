@@ -71,7 +71,6 @@ header h1 {
   font-weight: normal;
 }
 
-
 /* Portrait layout (default) */
 article {
   text-align: center;
@@ -85,23 +84,20 @@ article {
 }
 
 button {
-  width: 100px;
   background-color: #333333;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
   font-size: 18px;
-  padding: 8px 0px;
-  margin: 10px 5px;
+  padding: 8px 16px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);   /*Androidでタップ時にオレンジの枠表示を解除*/
 }
 
 button:hover {
-  background: #4B946A;
-  /*background: -webkit-gradient(linear, left top, left bottom, from(#489900), to(#63d000));*/
+  background-color: #4B946A;
 }
 
-button[type="button"]:disabled {
+button:disabled {
   background-color: #A7A7A7;
 }
 
@@ -164,14 +160,4 @@ button[type="button"]:disabled {
 .blink {
   animation:fade 3000ms infinite;
   -webkit-animation:fade 3000ms infinite;
-}
-
-table th {
-  width: 200px;
-  text-align: left;
-}
-
-table td {
-  width: 300px;
-  text-align: right;
 }

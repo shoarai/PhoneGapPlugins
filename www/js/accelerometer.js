@@ -1,15 +1,15 @@
+/**
+ * © 2014 shoarai
+ */
 
 
 var accelerometerCustom = {
   
-  
   // Get the acceleration
   //
   getAcceleration: function() {
-    var self = this;
-    navigator.accelerometer.getCurrentAcceleration(self._onSuccess, self._onError);
+    navigator.accelerometer.getCurrentAcceleration(this._onSuccess, this._onError);
   },
-  
   
   // Start watching the acceleration
   //
@@ -17,16 +17,14 @@ var accelerometerCustom = {
     // Update acceleration every 3 seconds
     var options = { frequency: config.ACCELEROMETER_FREAQUENCY };
 
-    var self = this;
-    this.watchID = navigator.accelerometer.watchAcceleration(self._onSuccess, self._onError, options);
+    this.watchID = navigator.accelerometer.watchAcceleration(this._onSuccess, this._onError, options);
   },
 
   // Stop watching the acceleration
   //
   stopWatch: function() {
     if (this.watchID) {
-      var self = this;
-      navigator.accelerometer.clearWatch(self.watchID);
+      navigator.accelerometer.clearWatch(this.watchID);
       this.watchID = null;
     }
   },

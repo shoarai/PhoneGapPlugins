@@ -25,9 +25,11 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugi
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\res \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\spec \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\spec.html \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\css\design.css \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\css\index.css \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\img\logo.png \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\accelerometer.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\compass.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\config.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\connection.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\device.js \
@@ -36,6 +38,7 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\no
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\js\splashscreen.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-motion \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.network-information \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.splashscreen \
@@ -45,6 +48,10 @@ C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugi
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www\Acceleration.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-motion\www\accelerometer.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation\www \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation\www\compass.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation\www\CompassError.js \
+C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.device-orientation\www\CompassHeading.js \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
 C:\dev\github\PhoneGapProject\PhoneGapPlugins\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \

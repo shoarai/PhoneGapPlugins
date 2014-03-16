@@ -54,6 +54,9 @@ var app = {
     // 加速度を監視する
     accelerometerCustom.startWatch();
     
+    // 方位を取得する
+    compassCustom.startWatch();
+    
     // ボタンを押下可能にする
     app.activeButton();
   },
