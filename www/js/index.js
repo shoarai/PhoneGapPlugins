@@ -46,7 +46,7 @@ var app = {
     connectionCustom.checkConnection();
     
     // スプラッシュスクリーンを表示する
-    splashscreenCustom.showScreen();
+//    splashscreenCustom.showScreen();
     
     // 加速度を取得する
 //    accelerometerCustom.getAcceleration();
