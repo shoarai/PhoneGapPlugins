@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bound</title>
+<style>
+body {
+  margin:0;
+  padding:0;
+}
+</style>
+<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+<script src="lib/jquery-2.0.3.min.js"></script>
+<script src="lib/enchant.min.js"></script>
+<script src="lib/ui.enchant.js"></script>
+<script src="js/enchant_test.js"></script>
+<script src="js/Own.js"></script>
+<script>
+enchant();
+
+window.onload = function () {
+  var imgPath = 'img/';
+  var ownPath = imgPath + 'icon1.png';
+  
+  var core = new Core(320, 320);
+  core.preload(ownPath);
+  core.fps = 15;
+  
+  // ランダム値
+  function rand(n) {
+    return Math.floor(Math.random() * n + 1);
+  }
+  
+  /**
+   * 自機クラス
+   */
+  var Own = Class.create(Sprite, {
+    initialize: function(x, y) {
+      Sprite.call(this, 16, 16);
+      this.frame = 3;
+      this.image = core.assets[ownPath];
+      this.x = x;
+      this.y = y;
+      this.v = 5;
+//        this.opacity = rand(100) / 100;
+      
+      // フレーム更新時
+      this.on('enterframe', function() {
+        // 操作
+        if (core.input.left)
+          if (this.x > 0)
+            this.x -= this.v;
+        if (core.input.right)
+          if (this.x < 320-16)
+            this.x += this.v;
+        if (core.input.up)
+          if (this.y > 0)
+            this.y -= this.v;
+        if (core.input.down)
+          if (this.y < 320-16)
+            this.y += this.v;
+      });
+      
+      var that = this;
+      core.rootScene.on('touchmove', function(e) {
+        // タッチした位置に移動
+/*        var x = e.x - that.width/2;   // スプライト幅の半分の値を引くことで中央にする
+        var y = e.y - that.width/2;   // スプライト高さの半分の値を引くことで中央にする
+        that.moveTo(x, y);
+*/        
+        
+        
+        
+        
+        
+        
+/*        var x_ = e.x - this.x;
+        var y_ = e.y - this.y;
+        var length = Math.sqrt(x_ * x_ + y_ * y_);
+        var vx = x_ * that.v / length;
+        var vy = y_ * that.v / length;
+        console.log(vx);
+        console.log(vy);
+        
+        that.x += vx;
+        that.y += vy;
+*/      });
+        
+  
+      // x, y, 40フレームかけて動く
+/*          this.tl.moveBy(rand(100), 0, 40, enchant.Easing.BOUNCE_EASEOUT)
+            .moveBy(-rand(100), -rand(20), rand(20))
+            .fadeOut(20)
+            .fadeIn(10)
+            .loop();
+*/
+/*        this.on('touchend', function(e) {
+            this.x = e.x;
+            this.y = e.y;
+        });
+*/        
+  
+      // クマを消す
+  /*      this.on('touchstart', function() {
+          core.rootScene.removeChild(this);
+        });
+  */      
+      // タッチした場所にクマを移す
+  /*      core.rootScene.on('touchstart', function(e) {
+          this.x = e.x;
+          this.y = e.y;
+        });
+  */      
+      core.rootScene.addChild(this);
+    }
+  });
+  
+  /**
+   * 敵
+   */
+  var Enemy = Class.create(Sprite, {
+    initialize: function(x, y, vx, vy) {
+      Sprite.call(this, 16, 16);
+      this.image = core.assets[ownPath];
+      this.frame = 4;
+      this.x = x;
+      this.y = y;
+      this.vx = vx;
+      this.vy = vy;
+      
+      this.on('enterframe', function() {
+        this.x += this.vx;
+        this.y += this.vy;
+        
+        // 壁に当たったら跳ね返る
+        if (this.x < 0 || this.x > 320-16) this.vx *= -1;
+        if (this.y < 0 || this.y > 320-16) this.vy *= -1;
+      });
+      
+      core.rootScene.addChild(this);
+    }
+  });
+  
+  
+  
+  core.onload = function() {    
+    // 自機
+    var own = new Own(100, 100);
+    
+    // 敵
+    var numEnemy = 50;
+    var enemies = [];
+    for (var i=0; i < numEnemy; i++) {
+      enemies[i] =  new Enemy(rand(10), rand(10), rand(5), rand(5));
+    };
+    
+    own.addEventListener('enterframe', function() {
+      // within（中心点との距離を指定）
+      for (var i=0; i < numEnemy; i++) {
+//      if (this.intersect(enemy)) {
+        if (this.within(enemies[i], 10)) {
+          label.text = Math.floor(label.text) + 1;
+          
+          own.scale(0.99, 0.99);
+          
+          if (own.scaleX < 0.1) {
+            console.log('test');
+          }
+    //        core.pushScene(gameOverScene);
+    //        core.stop();
+        }
+      }
+    });
+    
+    
+    
+    // 仮想パッドオブジェクトの生成
+    var pad = new Pad();
+//    var pad = new APad();
+    pad.moveTo(0, core.rootScene.height - 100);
+    core.rootScene.addChild(pad);
+    
+    pad.onenterframe = function() {
+
+      var input = core.input;
+      
+      
+      console.log(input.left);
+
+/*        if (input.left) {
+          this.x -= SPEED; this.scaleX = -1;//Spriteの向きを左に変更
+          if (count%4 < 2) {
+            sprite.frame=2;
+          }
+          else {
+            sprite.frame = 1;
+            if(count==4)
+            {
+              count=0;
+            }
+          }
+        }//countの初期化
+        else if (input.right) { this.x += SPEED; this.scaleX = 1;//Spriteの向きを右に変更
+                          if (count%4 < 2) {sprite.frame=2;}
+                          else {sprite.frame = 1;if(count==4){count=0;}}}//countの初期化
+        else if (input.up)    { this.y -= SPEED; sprite.frame =1;}
+        else if (input.down)  { this.y += SPEED; sprite.frame =3;}
+        else {sprite.frame=0;}
+*/    };
+    
+    core.rootScene.addEventListener('enterframe', function() {
+      var input = core.input;
+      pad.frame = 0;
+      if (input.up) {
+        pad.frame = 1;
+        pad.rotation = 0;
+        own.y--;
+      }
+      if (input.down) {
+        pad.frame = 1;
+        pad.rotation = 180;
+        own.y++;
+      }
+      if (input.right) {
+        pad.frame = 1;
+        pad.rotation = 90;
+        own.x++;
+      }
+      if (input.left) {
+        pad.frame = 1;
+        pad.rotation = 270;
+        own.x--;
+      }
+      // パッドにタッチしている状態か判別
+/*      if (pad.isTouched) {
+        own.x += pad.vx * speed;
+        own.y += pad.vy * speed;
+      }
+*/
+    });
+    
+    
+    
+    var label = new Label();
+    label.x = 280;
+    label.y = 5;
+    label.color = 'red';
+    label.font = '14px "Arial"';
+    label.text = '0';
+    
+    var gameOverScene = new Scene();
+    gameOverScene.backgroundColor = 'black';
+    
+    
+/*    label.on('enterframe', function() {
+      label.text = (core.frame / core.fps).toFixed(2);
+    });
+*/
+    core.rootScene.addChild(label);
+  };
+  core.start();
+};
+</script>
+</body>
+</html>
