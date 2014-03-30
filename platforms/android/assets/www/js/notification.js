@@ -8,6 +8,12 @@ var notificationCustom = {
   // Show a custom _alertDismissed
   //
   showAlert: function() {
+    var self = this;
+    function callback() {
+    };
+    
+    Hybriter.alert({title:'title', message:'messa', button:'OKKKKK', callback:callback});
+    return;
     navigator.notification.alert(
       'You are the winner!', // message
       this._alertDismissed,     // callback
