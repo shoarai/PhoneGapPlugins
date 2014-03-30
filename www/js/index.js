@@ -30,7 +30,7 @@ var app = {
     
     // ネットワークの状態が変化したとき、ネットワークの状態を確認する
     document.addEventListener("online", connectionCustom.checkConnection, false);
-    document.addEventListener("offline", connectionCustom.checkConnection, false);
+    document.addEventListener("offline", connectionCustom.checkConnection, false);   
   },
   // deviceready Event Handler
   //
