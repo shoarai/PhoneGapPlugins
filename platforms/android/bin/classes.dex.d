@@ -1,4 +1,5 @@
 C:\dev\github\PhoneGapPlugins\platforms\android\bin\classes.dex : \
+C:\dev\github\PhoneGapPlugins\platforms\android\bin\classes\com\shoarai\PGPlugins\PhoneGpaPlugins.class \
 C:\dev\github\PhoneGapPlugins\platforms\android\bin\classes\com\shoarai\PhoneGapPlugins\BuildConfig.class \
 C:\dev\github\PhoneGapPlugins\platforms\android\bin\classes\com\shoarai\PhoneGapPlugins\PhoneGpaPlugins.class \
 C:\dev\github\PhoneGapPlugins\platforms\android\bin\classes\com\shoarai\PhoneGapPlugins\R$attr.class \

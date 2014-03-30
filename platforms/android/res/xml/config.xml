@@ -31,7 +31,7 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
-    <name>PhoneGpaPlugins</name>
+    <name>PGPlugins</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
@@ -40,7 +40,7 @@
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
-    <preference name="orientation" value="portrait" />
+    <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="true" />
