@@ -8,6 +8,9 @@ var connectionCustom = {
   
   
   checkConnection: function() {
+    if (typeof navigator.connection === 'undefined') { return; }
+    if (typeof navigator.connection.type === 'undefined') { return; }
+    
     var networkState = navigator.connection.type;
     
     var states = {};

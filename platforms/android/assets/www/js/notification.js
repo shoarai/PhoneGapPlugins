@@ -8,12 +8,9 @@ var notificationCustom = {
   // Show a custom _alertDismissed
   //
   showAlert: function() {
-    var self = this;
-    function callback() {
-    };
+    if (typeof navigator.notification === 'undefined') { return; }
+    if (typeof navigator.notification.alert === 'undefined') { return; }
     
-    Hybriter.alert({title:'title', message:'messa', button:'OKKKKK', callback:callback});
-    return;
     navigator.notification.alert(
       'You are the winner!', // message
       this._alertDismissed,     // callback
@@ -30,6 +27,9 @@ var notificationCustom = {
   // Show a custom confirmation dialog
   //
   showConfirm: function() {
+    if (typeof navigator.notification === 'undefined') { return; }
+    if (typeof navigator.notification.confirm === 'undefined') { return; }
+    
     navigator.notification.confirm(
       'You are the winner!', // message
        this._onConfirm,      // callback to invoke with index of button pressed
@@ -48,6 +48,9 @@ var notificationCustom = {
   // Show a custom prompt dialog
   //
   showPrompt: function() {
+    if (typeof navigator.notification === 'undefined') { return; }
+    if (typeof navigator.notification.prompt === 'undefined') { return; }
+    
     navigator.notification.prompt(
       'Please enter your name', // message
       this._onPrompt,         // callback to invoke
@@ -68,12 +71,18 @@ var notificationCustom = {
   // Beep three times
   //
   playBeep: function() {
+    if (typeof navigator.notification === 'undefined') { return; }
+    if (typeof navigator.notification.beep === 'undefined') { return; }
+    
     navigator.notification.beep(config.BEEP_TIME);
   },
 
   // Vibrate for 2 seconds
   //
   vibrate: function() {
+    if (typeof navigator.notification === 'undefined') { return; }
+    if (typeof navigator.notification.vibrate === 'undefined') { return; }
+    
     navigator.notification.vibrate(config.VIBRATE_TIME);
   }
 };
