@@ -129,13 +129,13 @@ button:disabled {
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
   
   div.left {
-    margin: 0px 0px 0px -180px;
+    margin: 0px 0px 0px -175px;
     width: 351px;                /* text area width */
     float: left;
   }
   
   div.right {
-    margin: 0px -180px 0px 0px;
+    margin: 0px -175px 0px 0px;
     width: 351px;                /* text area width */
     float: right;
   }
